@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { Badge } from "@/components/ui/badge"
+import Link from 'next/link'
 
 const Projects = () => {
   return (
@@ -29,12 +30,12 @@ const Projects = () => {
                 <Badge variant="outline" className='bg-blue-400 text-white'>Twilio SMS</Badge>
             </div>
             <div className="flex items-center flex-wrap ">
-              <a className="text-blue-400 inline-flex items-center md:mb-2 lg:mb-0 hover:cursor-pointer hover:text-blue-500">View Project
+              <Link href='https://www.qube-software.com' className="text-blue-400 inline-flex items-center md:mb-2 lg:mb-0 hover:cursor-pointer hover:text-blue-500">View Project
                 <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M5 12h14"></path>
                   <path d="M12 5l7 7-7 7"></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -55,12 +56,12 @@ const Projects = () => {
                 <Badge variant="outline" className='bg-blue-400 text-white'>Custom GPT</Badge>
             </div>
             <div className="flex items-center flex-wrap ">
-              <a className="text-blue-400 inline-flex items-center md:mb-2 lg:mb-0 hover:cursor-pointer hover:text-blue-500">View Project
+              <Link href='https://www.bookqube.com' className="text-blue-400 inline-flex items-center md:mb-2 lg:mb-0 hover:cursor-pointer hover:text-blue-500">View Project
                 <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M5 12h14"></path>
                   <path d="M12 5l7 7-7 7"></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -81,12 +82,12 @@ const Projects = () => {
                 <Badge variant="outline" className='bg-blue-400 text-white'>AWS SES</Badge>
             </div>
             <div className="flex items-center flex-wrap ">
-              <a className="text-blue-400 inline-flex items-center md:mb-2 lg:mb-0 hover:cursor-pointer hover:text-blue-500">View Project
+              <Link href='https://www.pickupmonster.com' className="text-blue-400 inline-flex items-center md:mb-2 lg:mb-0 hover:cursor-pointer hover:text-blue-500">View Project
                 <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M5 12h14"></path>
                   <path d="M12 5l7 7-7 7"></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
