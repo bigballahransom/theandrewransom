@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className='fixed top-0 w-full bg-white border-b opacity-90'>
+        <div className='fixed top-0 w-full bg-white border-b opacity-90 z-50'>
           <Navbar />
         </div>
         <div className='md:pb-16 pb-24'>
