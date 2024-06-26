@@ -4,11 +4,13 @@ import React, { useRef, useState } from 'react'
 import { Button } from '../ui/button'
 import emailjs from '@emailjs/browser'
 import LoadingDots from './LoadingDots'
+import { useToast } from "@/components/ui/use-toast"
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
   const [emailProcessing, setProcessing] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
+  const { toast } = useToast();
 
   const processEmail = () => {
     setProcessing(true);
@@ -24,14 +26,24 @@ const Contact = () => {
           console.log('Email sent successfully:', result.text);
           setProcessing(false);
           setEmailSent(true);
+          toast({
+            title: "Email Sent Successfully",
+            description: "Your email has been sent and we'll get back to you shortly.",
+          });
         }, (error: any) => {
           console.error('Error sending email:', error.text);
+          setProcessing(false);
           setEmailSent(false);
+          toast({
+            title: "Error Sending Email",
+            description: "There was an error sending your email. Please try again later.",
+          });
         });
     } else {
       console.error('Form reference is null');
     }
   };
+
 
   return (
     <div>

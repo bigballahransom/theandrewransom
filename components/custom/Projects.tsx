@@ -19,7 +19,7 @@ const Projects = () => {
           <div className="p-6">
             <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">FULL STACK</h2>
             <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Qube Movers CRM</h1>
-            <p className="leading-relaxed mb-3">Unleah your sales pipeline with smart automation, smart AI estimates, and email and text marketing. Complete with crew checkout and paperless Bill of Ladings.</p>
+            <p className="leading-relaxed mb-3">Unleash your sales pipeline with smart automation, smart AI estimates, and email and text marketing. Complete with crew checkout and paperless Bill of Ladings.</p>
             <div className='flex flex-wrap gap-2 mb-4'>
                 <Badge variant="outline" className='bg-blue-400 text-white'>NextJS</Badge>
                 <Badge variant="outline" className='bg-blue-400 text-white'>TypeScript</Badge>
