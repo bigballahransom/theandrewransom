@@ -1,7 +1,10 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
+import { useToast } from "@/components/ui/use-toast"
 
 const Navbar = () => {
+  const { toast } = useToast()
   return (
     <div>
       <header className="text-gray-600 body-font">
@@ -19,7 +22,14 @@ const Navbar = () => {
       <a className="mr-5 hover:text-gray-900">Third Link</a>
       <a className="mr-5 hover:text-gray-900">Fourth Link</a>
     </nav> */}
-    <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-0 gap-2">
+    <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-0 gap-2" 
+      onClick={() => {
+        toast({
+          title: "Please check back later!",
+          description: "This feature is currently under development.",
+        })
+      }}
+    >
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
 </svg>
