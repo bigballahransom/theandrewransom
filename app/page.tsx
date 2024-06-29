@@ -3,6 +3,7 @@ import React, { useRef } from 'react'
 import Contact from "@/components/custom/Contact";
 import Hero from "@/components/custom/Hero";
 import Projects from "@/components/custom/Projects";
+import Stats from '@/components/custom/Stats';
 
 export default function Home() {
   const contactRef = useRef<HTMLDivElement>(null);
@@ -17,6 +18,7 @@ export default function Home() {
     <main className="">
       <div>
         <Hero scrollToContact={scrollToContact} />
+        <Stats/>
         <Projects />
         <div ref={contactRef}>
           <Contact />
