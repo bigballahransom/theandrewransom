@@ -11,7 +11,7 @@ const Projects = () => {
     <div className="flex flex-wrap -m-4">
     <div className="flex flex-col text-center w-full mb-12">
       <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Explore My Work</h1>
-      <p className="lg:w-2/3 mx-auto leading-relaxed text-white">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-white">From succesful moving companies to commercial SAAS products companies love!</p>
     </div>
     <div className="p-4 md:w-1/3">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden bg-white">
