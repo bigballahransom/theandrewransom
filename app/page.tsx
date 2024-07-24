@@ -4,6 +4,7 @@ import Contact from "@/components/custom/Contact";
 import Hero from "@/components/custom/Hero";
 import Projects from "@/components/custom/Projects";
 import Stats from '@/components/custom/Stats';
+import Education from '@/components/custom/Education';
 
 export default function Home() {
   const contactRef = useRef<HTMLDivElement>(null);
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero scrollToContact={scrollToContact} />
         <Stats/>
         <Projects />
+        {/* <Education/> */}
         <div ref={contactRef}>
           <Contact />
         </div>
